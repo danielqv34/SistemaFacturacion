@@ -1,7 +1,6 @@
 package Clases;
+import Controllers.AplicattionController;
 import  Formularios.frmLogin;
-
-import javax.swing.*;
 
 /**
  * Created by DanielQuirozV on 10/21/2015.

@@ -1,6 +1,6 @@
 package Formularios;
 
-import Clases.AplicattionController;
+import Controllers.AplicattionController;
 import Clases.Datos;
 import Clases.backgrounDesktop;
 

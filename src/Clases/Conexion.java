@@ -1,19 +1,16 @@
 package Clases;
 
-
 import oracle.jdbc.driver.OracleConnection;
 
-import javax.swing.*;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
- * Created by DanielQuirozV on 10/31/2015.
+ * Created by ezequ on 10/1/2016.
  */
-
-
-public class AplicattionController {
-
-    public static Connection GetConnection() {
+public class Conexion {
+    public static Connection getConnection() {
         String url = "jdbc:oracle:thin:@//localhost:1521/springcrud";
         String user = "c##dquiroz";
         String pass = "abc123";
@@ -30,16 +27,4 @@ public class AplicattionController {
         }
         return connection;
     }
-
-
-    public boolean validarUsuario(String nombre, String contrasenia) {
-        if (nombre.equals("daniel") && contrasenia.equals("abc123")) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-
 }
-
