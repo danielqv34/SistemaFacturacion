@@ -1,4 +1,4 @@
-package Controllers;
+package com.dqv.controllers;
 
 
 import oracle.jdbc.driver.OracleConnection;

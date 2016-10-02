@@ -1,8 +1,8 @@
-package Formularios;
+package com.dqv.forms;
 
-import Controllers.AplicattionController;
-import Clases.Datos;
-import Clases.backgrounDesktop;
+import com.dqv.controllers.AplicattionController;
+import com.dqv.clases.Datos;
+import com.dqv.clases.backgrounDesktop;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -58,25 +58,25 @@ public class frmPrincipal extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //Iconos Menu Principal
-        Icon icoArchivo = new ImageIcon(getClass().getResource("/images/file.png"));
-        Icon icoMovimientos = new ImageIcon(getClass().getResource("/images/movement.png"));
-        Icon icoAyuda = new ImageIcon(getClass().getResource("/images/help.png"));
+        Icon icoArchivo = new ImageIcon(getClass().getResource("/com/dqv/images/file.png"));
+        Icon icoMovimientos = new ImageIcon(getClass().getResource("/com/dqv/images/movement.png"));
+        Icon icoAyuda = new ImageIcon(getClass().getResource("/com/dqv/images/help.png"));
 
         //Iconos Menu Archivo
-        Icon icoClientes = new ImageIcon(getClass().getResource("/images/client.png"));
-        Icon icoProductos = new ImageIcon(getClass().getResource("/images/products.png"));
-        Icon icoUsuarios = new ImageIcon(getClass().getResource("/images/user.png"));
-        Icon icoClave = new ImageIcon(getClass().getResource("/images/password.png"));
-        Icon icoCambioUser = new ImageIcon(getClass().getResource("/images/userChange.png"));
-        Icon icoSalir = new ImageIcon(getClass().getResource("/images/exit.png"));
+        Icon icoClientes = new ImageIcon(getClass().getResource("/com/dqv/images/client.png"));
+        Icon icoProductos = new ImageIcon(getClass().getResource("/com/dqv/images/products.png"));
+        Icon icoUsuarios = new ImageIcon(getClass().getResource("/com/dqv/images/user.png"));
+        Icon icoClave = new ImageIcon(getClass().getResource("/com/dqv/images/password.png"));
+        Icon icoCambioUser = new ImageIcon(getClass().getResource("/com/dqv/images/userChange.png"));
+        Icon icoSalir = new ImageIcon(getClass().getResource("/com/dqv/images/exit.png"));
 
         //Iconos Menu Movimientos
-        Icon icoNuevaFacutra = new ImageIcon(getClass().getResource("/images/newbill.png"));
-        Icon icoReporteFactura = new ImageIcon(getClass().getResource("/images/report.png"));
+        Icon icoNuevaFacutra = new ImageIcon(getClass().getResource("/com/dqv/images/newbill.png"));
+        Icon icoReporteFactura = new ImageIcon(getClass().getResource("/com/dqv/images/report.png"));
 
         //Iconos Menu Ayuda
-        Icon icoAcercaDe = new ImageIcon(getClass().getResource("/images/about.png"));
-        Icon icoHelp = new ImageIcon(getClass().getResource("/images/info.png"));
+        Icon icoAcercaDe = new ImageIcon(getClass().getResource("/com/dqv/images/about.png"));
+        Icon icoHelp = new ImageIcon(getClass().getResource("/com/dqv/images/info.png"));
 
 
         //Creacion de Objetos
@@ -104,7 +104,7 @@ public class frmPrincipal extends JFrame {
         DpEscritorio = new backgrounDesktop();
 
         //Imagen al Desktop
-        ((backgrounDesktop) DpEscritorio).setImagen("/images/background.jpg");
+        ((backgrounDesktop) DpEscritorio).setImagen("/com/dqv/images/background.jpg");
 
         //Adicion deIconos
         menuArchivo.setIcon(icoArchivo);

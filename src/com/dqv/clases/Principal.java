@@ -1,6 +1,6 @@
-package Clases;
-import Controllers.AplicattionController;
-import  Formularios.frmLogin;
+package com.dqv.clases;
+import com.dqv.controllers.AplicattionController;
+import com.dqv.forms.frmLogin;
 
 /**
  * Created by DanielQuirozV on 10/21/2015.

@@ -1,4 +1,4 @@
-package Clases;
+package com.dqv.clases;
 
 import oracle.jdbc.driver.OracleConnection;
 

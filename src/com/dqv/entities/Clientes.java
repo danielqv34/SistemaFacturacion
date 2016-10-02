@@ -1,6 +1,6 @@
-package Clases;
+package com.dqv.entities;
 
-import javax.xml.crypto.Data;
+
 import java.util.Date;
 
 

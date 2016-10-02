@@ -1,17 +1,14 @@
-package Formularios;
+package com.dqv.forms;
 
-import Clases.Datos;
-import Clases.Usuario;
+import com.dqv.clases.Datos;
+import com.dqv.entities.Usuario;
 
 import javax.swing.*;
 import javax.swing.event.InternalFrameEvent;
 import javax.swing.event.InternalFrameListener;
 import javax.swing.table.DefaultTableModel;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import static java.lang.System.out;
 
 /**
  * Created by DanielQuirozV on 10/23/2015.
@@ -77,16 +74,16 @@ public class frmUsuarios extends JInternalFrame {
 
         //Iconos Botones
 
-        Icon icoBtonPrimero = new ImageIcon(getClass().getResource("/images/rewind.png"));
-        Icon icoBtonAnterior = new ImageIcon(getClass().getResource("/images/last.png"));
-        Icon icoBtonSiguiente = new ImageIcon(getClass().getResource("/images/next.png"));
-        Icon icoBtonUltimo = new ImageIcon(getClass().getResource("/images/lastest.png"));
-        Icon icoBtonNuevo = new ImageIcon(getClass().getResource("/images/new.png"));
-        Icon icoBtnModificar = new ImageIcon(getClass().getResource("/images/edit.png"));
-        Icon icoBtnGuardar = new ImageIcon(getClass().getResource("/images/save.png"));
-        Icon icoBtnCancelar = new ImageIcon(getClass().getResource("/images/cancelformUser.png"));
-        Icon icoBtnBorrar = new ImageIcon(getClass().getResource("/images/delete.png"));
-        Icon icoBtnBuscar = new ImageIcon(getClass().getResource("/images/search.png"));
+        Icon icoBtonPrimero = new ImageIcon(getClass().getResource("/com/dqv/images/rewind.png"));
+        Icon icoBtonAnterior = new ImageIcon(getClass().getResource("/com/dqv/images/last.png"));
+        Icon icoBtonSiguiente = new ImageIcon(getClass().getResource("/com/dqv/images/next.png"));
+        Icon icoBtonUltimo = new ImageIcon(getClass().getResource("/com/dqv/images/lastest.png"));
+        Icon icoBtonNuevo = new ImageIcon(getClass().getResource("/com/dqv/images/new.png"));
+        Icon icoBtnModificar = new ImageIcon(getClass().getResource("/com/dqv/images/edit.png"));
+        Icon icoBtnGuardar = new ImageIcon(getClass().getResource("/com/dqv/images/save.png"));
+        Icon icoBtnCancelar = new ImageIcon(getClass().getResource("/com/dqv/images/cancelformUser.png"));
+        Icon icoBtnBorrar = new ImageIcon(getClass().getResource("/com/dqv/images/delete.png"));
+        Icon icoBtnBuscar = new ImageIcon(getClass().getResource("/com/dqv/images/search.png"));
 
         //Creacion de los Objetos del Form
         //Formulario

@@ -1,4 +1,4 @@
-package Clases;
+package com.dqv.entities;
 
 import java.util.Date;
 

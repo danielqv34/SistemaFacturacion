@@ -1,4 +1,4 @@
-package Clases;
+package com.dqv.clases;
 
 /**
  * Created by DanielQuirozV on 10/24/2015.

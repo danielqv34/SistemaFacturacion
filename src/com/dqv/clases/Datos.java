@@ -1,8 +1,10 @@
-package Clases;
+package com.dqv.clases;
 
-import javax.swing.*;
+import com.dqv.entities.Clientes;
+import com.dqv.entities.Productos;
+import com.dqv.entities.Usuario;
+
 import java.util.Date;
-import java.util.TimeZone;
 
 
 /**

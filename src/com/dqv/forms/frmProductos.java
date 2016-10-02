@@ -1,4 +1,4 @@
-package Formularios;
+package com.dqv.forms;
 
 import javax.swing.*;
 import java.util.Date;

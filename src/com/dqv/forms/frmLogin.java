@@ -1,7 +1,7 @@
-package Formularios;
+package com.dqv.forms;
 
-import Controllers.AplicattionController;
-import Clases.Datos;
+import com.dqv.controllers.AplicattionController;
+import com.dqv.clases.Datos;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -44,9 +44,9 @@ public class frmLogin extends JFrame{
         setLayout(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //Iconos
-        Icon icoAceptar = new ImageIcon(getClass().getResource("/images/accept.png"));
-        Icon icoCancel = new ImageIcon(getClass().getResource("/images/cancel.png"));
-        Icon iconAdmin = new ImageIcon(getClass().getResource("/images/login.png"));
+        Icon icoAceptar = new ImageIcon(getClass().getResource("/com/dqv/images/accept.png"));
+        Icon icoCancel = new ImageIcon(getClass().getResource("/com/dqv/images/cancel.png"));
+        Icon iconAdmin = new ImageIcon(getClass().getResource("/com/dqv/images/login.png"));
 
         //Creo objetos del Formulario
         lblUsuario = new JLabel("Usuario:");
