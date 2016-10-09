@@ -3,6 +3,7 @@ package com.dqv.forms;
 import com.dqv.controllers.AplicattionController;
 import com.dqv.clases.Datos;
 import com.dqv.clases.backgrounDesktop;
+import com.dqv.controllers.UserController;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -37,14 +38,14 @@ public class frmPrincipal extends JFrame {
 
     //Atributos
     private Datos misDatos;
-    private AplicattionController datosController;
+    private UserController datosController;
 
     //Metodos
     public void setDatos(Datos datos) {
         misDatos = datos;
     }
 
-    public void setDatosController(AplicattionController datosController) {
+    public void setDatosController(UserController datosController) {
         this.datosController = datosController;
     }
 

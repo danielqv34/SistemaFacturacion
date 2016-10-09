@@ -1,7 +1,8 @@
 package com.dqv.forms;
 
-import com.dqv.controllers.AplicattionController;
+
 import com.dqv.clases.Datos;
+import com.dqv.controllers.UserController;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -23,11 +24,11 @@ public class frmLogin extends JFrame{
     //Atributos
     private  Datos misDatos;
 
-    public void setDatosControllerLogin(AplicattionController datosControllerLogin) {
+    public void setDatosControllerLogin(UserController datosControllerLogin) {
         this.datosControllerLogin = datosControllerLogin;
     }
 
-    private AplicattionController datosControllerLogin;
+    private UserController datosControllerLogin;
 
     //Metodos
     public void setDatos(Datos datos){
@@ -105,7 +106,7 @@ public class frmLogin extends JFrame{
     }
     private void bAceptarAction(ActionEvent event){
         //Valido que el usuario existe
-        if(!datosControllerLogin.validarUsuario(txtUsuario.getText(), new String(txtPass.getPassword()))){
+        if(!datosControllerLogin.validaUsuario(txtUsuario.getText(), new String(txtPass.getPassword()))){
             JOptionPane.showMessageDialog(rootPane,"Usuario o Contraseña son incorrectos");
             txtUsuario.setText("");
             txtPass.setText("");
