@@ -1,10 +1,6 @@
 package com.dqv.controllers;
 
 
-import oracle.jdbc.driver.OracleConnection;
-
-import javax.swing.*;
-import java.sql.*;
 
 /**
  * Created by DanielQuirozV on 10/31/2015.

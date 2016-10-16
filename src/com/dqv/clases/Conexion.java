@@ -19,7 +19,6 @@ public class Conexion {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             connection = (OracleConnection) DriverManager.getConnection(url, user, pass);
-            System.out.println("Conexion con Oracle Exitosa");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {

@@ -4,6 +4,7 @@ import com.dqv.controllers.AplicattionController;
 import com.dqv.clases.Datos;
 import com.dqv.clases.backgrounDesktop;
 import com.dqv.controllers.UserController;
+import com.dqv.entities.Usuario;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -38,16 +39,12 @@ public class frmPrincipal extends JFrame {
 
     //Atributos
     private Datos misDatos;
-    private UserController datosController;
+    private UserController userController;
 
-    //Metodos
-    public void setDatos(Datos datos) {
-        misDatos = datos;
-    }
 
-    public void setDatosController(UserController datosController) {
-        this.datosController = datosController;
-    }
+
+    private Usuario usuario;
+
 
     //Constructor
     public frmPrincipal() {
@@ -273,4 +270,20 @@ public class frmPrincipal extends JFrame {
     private void menuAHelpAction(ActionEvent e) {
 
     }
+
+
+
+    //Metodos SET
+    public void setDatos(Datos datos) {
+        misDatos = datos;
+    }
+
+    public void setDatosController(UserController datosController) {
+        this.userController = datosController;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
 }

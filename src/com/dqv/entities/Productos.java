@@ -18,18 +18,8 @@ public class Productos {
     private double Precio;
     private int Cantidad;
 
-    public Productos(String idProducto, String codigoBarras, String nombre, String marca, String proveedor, int tipo,
-                     Date fechaVencimiento, Date fechadeIngreso, double precio, int cantidad) {
-        IdProducto = idProducto;
-        CodigoBarras = codigoBarras;
-        Nombre = nombre;
-        Marca = marca;
-        this.proveedor = proveedor;
-        Tipo = tipo;
-        FechaVencimiento = fechaVencimiento;
-        FechadeIngreso = fechadeIngreso;
-        Precio = precio;
-        Cantidad = cantidad;
+    public Productos(){
+
     }
 
     public String getIdProducto() {

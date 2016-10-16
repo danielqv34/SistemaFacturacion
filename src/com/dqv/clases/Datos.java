@@ -4,6 +4,7 @@ import com.dqv.entities.Clientes;
 import com.dqv.entities.Productos;
 import com.dqv.entities.Usuario;
 
+import javax.swing.*;
 import java.util.Date;
 
 
@@ -36,14 +37,6 @@ public class Datos {
     }
 
 
-    public boolean validarUsuario(String usuario, String pass) {
-        if (usuario.equalsIgnoreCase("Daniel") && pass.equals("abc123") || (usuario.equalsIgnoreCase("Massiel")
-                && pass.equals("abc123"))) {
-            return true;
-        } else {
-            return false;
-        }
-    }
   //Usuarios
     private void cargarUsuarios() {
         //El metodo Cargar Usuarios para crear los usuarios

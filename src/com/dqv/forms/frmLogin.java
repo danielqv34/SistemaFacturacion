@@ -18,17 +18,17 @@ public class frmLogin extends JFrame{
     private JLabel lblPass;
     private JLabel lblImg;
     private JTextField txtUsuario;
-    private JPasswordField txtPass;
+    private JTextField txtPass;
     private JButton bAceptar;
     private JButton bCancelar;
     //Atributos
     private  Datos misDatos;
+    private  UserController userController;
 
-    public void setDatosControllerLogin(UserController datosControllerLogin) {
-        this.datosControllerLogin = datosControllerLogin;
+
+    public void setUserController(UserController userController) {
+        this.userController = userController;
     }
-
-    private UserController datosControllerLogin;
 
     //Metodos
     public void setDatos(Datos datos){
@@ -106,7 +106,7 @@ public class frmLogin extends JFrame{
     }
     private void bAceptarAction(ActionEvent event){
         //Valido que el usuario existe
-        if(!datosControllerLogin.validaUsuario(txtUsuario.getText(), new String(txtPass.getPassword()))){
+        if(!userController.validarUsuario(txtUsuario.getText(), new String(txtPass.getText()))){
             JOptionPane.showMessageDialog(rootPane,"Usuario o Contraseña son incorrectos");
             txtUsuario.setText("");
             txtPass.setText("");
@@ -118,7 +118,7 @@ public class frmLogin extends JFrame{
         frmPrincipal miFirst = new frmPrincipal();
         setVisible(false);
         miFirst.setDatos(misDatos);
-        miFirst.setDatosController(datosControllerLogin);
+        miFirst.setDatosController(userController);
         miFirst.setExtendedState(JFrame.MAXIMIZED_BOTH);
         miFirst.setVisible(true);
 
